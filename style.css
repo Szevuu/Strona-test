@@ -1,0 +1,172 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto Condensed;
+    color: white;
+}
+#kontener{
+    min-width: 100%;
+    min-height: 100%;
+    background-color:#E2A3C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#kontener h1{
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#przyciski{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+.btn{
+    font-family: Roboto Condensed;
+    font-weight: 100;
+    font-size: 40px;
+    color: #fff;
+    background: linear-gradient(90deg, #D67AB1 0%, #c500cc 100%);
+    padding: 10px 35px;
+    border: 2px solid #D67AB1;   
+    border-radius: 38px;
+    transition : 670ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+    
+    
+.btn:hover{
+    
+    transition : 670ms;
+    padding: 10px 43px;
+    transform : translateY(-3px);
+  
+    color: #cccccc;
+    border: solid 2px #D67AB1;
+    }
+
+@keyframes animacja_tak {
+    0% 
+    {
+        background: #BFFF00;
+    }
+    10%
+    {
+        background: #A6FF00;
+    }
+    20%
+    {
+        background: #59FF00;
+    }
+    30%
+    {
+        background: #2FFF00;
+    }
+    40%
+    {
+        background: #4EFD2B;
+    }
+    50%
+    {
+        background:#00FF2A;
+    }
+    60%
+    {
+        background: #00FF40;
+    }
+    70%
+    {
+        background: #03CE36;
+    }
+    80%
+    {
+        background: #04A92D;
+    }
+    90%
+    {
+        background: #00FF2A;
+    }
+    100%
+    {
+        background: #A6FF00;
+    }
+
+}
+
+#napis_po_tak
+{
+    display: none;
+}
+
+#zdjecieTak, #zdjecieNie{
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+#wynik{
+    opacity: 0;
+    transition : 300ms;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 1400px)
+{
+    #kontener h1{
+        
+        font-size: 50px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+    }
+   #zdjecieTak{
+    width: 30%;
+   }
+   #zdjecieNie{
+    width: 30%;
+   }
+}
+@media only screen and (max-width: 520px)
+{
+    #kontener{
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+       
+    }
+    #pytanie{
+        margin-top: 150px;
+    }
+    #kontener h1{
+        
+        font-size: 50px;
+        margin-bottom: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+   #zdjecieTak{
+    margin-top: 50px;
+    width: 70%;
+   }
+   #zdjecieNie{
+    width: 70%;
+   }
+
+
+}
